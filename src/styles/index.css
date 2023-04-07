@@ -1,0 +1,70 @@
+header {
+  background-color: #a5a5a5;
+  padding: 16px;
+  text-align: center;
+}
+header .logo {
+  width: 200px;
+}
+header .NavBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+header .NavBar a {
+  text-decoration: none;
+  color: #c4040c;
+}
+header .NavBar a:hover {
+  color: #4d4d4d;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  header .NavBar {
+    width: 50%;
+  }
+}
+footer {
+  background-color: #a5a5a5;
+  padding: 16px;
+  text-align: center;
+  background-color: #464646;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+footer .social-media a i {
+  color: #c4040c;
+  font-size: 40px;
+}
+footer .info {
+  color: #c4040c;
+}
+footer .info p {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+@media screen and (min-width: 600px) {
+  footer .social-media {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+body {
+  margin: 0;
+  background-color: #a5a5a5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,39 @@
+@import "../defaults/colors";
+@import "./background";
+@import "../defaults/breakpoint";
+
+header {
+    @include background-stuff();
+              
+        .logo {
+            width: 200px;
+        }
+
+    .NavBar {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            font-size: 18px;
+
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+        }
+
+        a:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .NavBar {
+            width: 50%;
+        }
+    }
+}
