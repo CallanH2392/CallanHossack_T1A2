@@ -1,0 +1,36 @@
+@import "./defaults/colors";
+@import "./attributes/header";
+@import "./attributes/footer";
+@import "./index";
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    Section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        .About {
+            padding-left: 25px;
+            flex: 1;
+            color: $primary-color;
+            font-size: 24px;
+        }
+    .portrait {
+        display: flex;
+        .Callan {
+            padding-right: 25px;
+            display: flex;
+            flex: 1;
+            height: 300px;
+            width: 100%;
+            border-radius: 25%;
+            }
+        }
+    }
+}
+
