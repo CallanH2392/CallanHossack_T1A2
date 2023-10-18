@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 @import "../defaults/colors";
 @import "./background";
 @import "../defaults/breakpoint";
 
-header {
+header { 
     @include background-stuff();
               
         .logo {
@@ -10,6 +11,7 @@ header {
         }
 
     .NavBar {
+            font-family: 'Pixelify Sans', sans-serif;
             width: 100%;
             display: flex;
             justify-content: space-around;

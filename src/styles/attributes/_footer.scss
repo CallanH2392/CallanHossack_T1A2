@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
 @import "../defaults/colors";
 @import "./background";
 @import "../defaults/breakpoint";
@@ -5,26 +6,41 @@
 footer {
     @include background-stuff();
     background-color: #464646;
+    font-family: "Pixelify Sans", sans-serif;
     .social-media {
         display: flex;
         justify-content: space-around;
         margin-bottom: 24px;
-
+        
         a {
             i {
                 color: $secondary-color;
                 font-size: 40px;
             }
         }
-    }
-
-    .info {
-        color: $secondary-color;
-
-        p {
-            font-size: 24px;
-            margin: 5px 0;
+        .fa-square-github:hover {
+            color: #171515;
         }
+        .fa-linkedin:hover {
+            color: #0e76a8;
+        }
+        .fa-square-twitter:hover {
+            color: #00acee;
+        }
+        .fa-square-instagram:hover {
+            width: 35px;
+            content: url(../../images/instagram.png)
+        }
+
+    }
+}
+
+.info {
+    color: white;
+
+    p {
+        font-size: 16px;
+        margin: 5px 0;
     }
 }
 

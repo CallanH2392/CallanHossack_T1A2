@@ -1,0 +1,14 @@
+@import "../defaults/colors";
+@import "../attributes/header";
+@import "../attributes/footer";
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+body {
+    margin: 0;
+    background-color: #a5a5a5;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
