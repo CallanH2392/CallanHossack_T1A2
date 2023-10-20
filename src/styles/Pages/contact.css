@@ -81,11 +81,15 @@ footer .social-media .fa-square-instagram:hover {
     margin-right: auto;
   }
 }
-body {
+main {
   margin: 0;
   background-color: #a5a5a5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+main .Contactme {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=contact.css.map */

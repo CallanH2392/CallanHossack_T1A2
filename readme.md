@@ -16,4 +16,4 @@ Updated all pages and CSS to match with the same look and feel, added logos for 
 
 ## Fifth Commit
 
-Fully funtional front page and connections to all the other social media. as well as the main body text of the front page explaining who I am.
+Fully funtional front page and connections to all the other social media. changed all the fonting for fotter and header and also the icons for colour representation of the actual website, using old twitter logo as i like it better than X.
