@@ -81,7 +81,7 @@ footer .social-media .fa-square-instagram:hover {
     margin-right: auto;
   }
 }
-main {
+body {
   margin: 0;
   background-color: #a5a5a5;
   min-height: 100vh;
@@ -89,7 +89,31 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-main .Contactme {
+
+main {
   display: flex;
+  justify-content: space-between;
+}
+main .sidecolumn {
+  width: 25%;
+}
+main .Contactme {
+  height: 25vh;
+  padding: 24px;
+  border: solid black;
+  border-radius: 12px;
+  width: 50%;
+  box-shadow: 8px 8px 5px black;
+}
+main .Contactme #Form-Element {
+  margin: 12px;
+  display: flex;
+  border-radius: 8px;
   justify-content: center;
+  align-items: center;
+}
+main .Contactme #Form-Element #message {
+  align-items: bottom;
+  width: 30%;
+  display: flex;
 }/*# sourceMappingURL=contact.css.map */

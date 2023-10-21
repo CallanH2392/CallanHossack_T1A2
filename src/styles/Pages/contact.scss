@@ -4,18 +4,41 @@
 @import "../attributes/footer";
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
-main {
+body {
     margin: 0;
     background-color: #a5a5a5;
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    .Contactme {
+}
+    main{    
         display: flex;
-        justify-content: center;
-
+        justify-content: space-between;
+    .sidecolumn { 
+        width: 25%;  
     }
+    .Contactme {
+        height: 25vh;
+        padding: 24px;
+        border: solid black;
+        border-radius: 12px;
+        width: 50%;
+        box-shadow: 8px 8px 5px black;    
+        
+        #Form-Element {
+            margin: 12px;
+            display: flex;
+            border-radius: 8px;
+            justify-content: center;
+            align-items: center;
+            
+            & #message {
+              align-items: bottom;
+              width: 30%;
+              display: flex;  
+            }
+    }
+}
+
 }
