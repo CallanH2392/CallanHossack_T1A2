@@ -98,22 +98,67 @@ main .sidecolumn {
   width: 25%;
 }
 main .Contactme {
-  height: 25vh;
-  padding: 24px;
+  height: 50dvh;
+  padding: 6px;
   border: solid black;
   border-radius: 12px;
   width: 50%;
   box-shadow: 8px 8px 5px black;
 }
-main .Contactme #Form-Element {
-  margin: 12px;
+main .Contactme #Form-Element-name {
+  margin: 0px;
   display: flex;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
 }
-main .Contactme #Form-Element #message {
+main .Contactme #Form-Element-name #message {
   align-items: bottom;
   width: 30%;
   display: flex;
+}
+main .Contactme .input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main .Contactme textarea {
+  resize: none;
+}
+@media screen and (max-width: 600px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .sidecolumn {
+    display: flex;
+    width: 25%;
+  }
+  main .Contactme {
+    display: flex;
+    height: 75%;
+    justify-content: center;
+    margin: 12px;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  main .Contactme #Form-Element-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .Contactme .input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  main .Contactme textarea {
+    resize: none;
+    height: 90%;
+  }
 }/*# sourceMappingURL=contact.css.map */

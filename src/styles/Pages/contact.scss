@@ -2,7 +2,7 @@
 @import "../defaults/breakpoint";
 @import "../attributes/header";
 @import "../attributes/footer";
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
 
 body {
     margin: 0;
@@ -12,33 +12,84 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-    main{    
-        display: flex;
-        justify-content: space-between;
-    .sidecolumn { 
-        width: 25%;  
+main {
+    display: flex;
+    justify-content: space-between;
+    .sidecolumn {
+        width: 25%;
     }
     .Contactme {
-        height: 25vh;
-        padding: 24px;
+        height: 50dvh;
+        padding: 6px;
         border: solid black;
         border-radius: 12px;
         width: 50%;
-        box-shadow: 8px 8px 5px black;    
-        
-        #Form-Element {
-            margin: 12px;
+        box-shadow: 8px 8px 5px black;
+
+        #Form-Element-name {
+            margin: 0px;
             display: flex;
             border-radius: 8px;
             justify-content: center;
             align-items: center;
-            
-            & #message {
-              align-items: bottom;
-              width: 30%;
-              display: flex;  
+
+            #message {
+                align-items: bottom;
+                width: 30%;
+                display: flex;
             }
+        }
+
+        .input {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        textarea {
+            resize: none;
+        }
+        .input {
+        }
     }
 }
 
+@media screen and (max-width: $medium) {
+    main {
+        display: flex;
+        justify-content: space-between;
+        .sidecolumn {
+            display: flex;
+            width: 25%;
+        }
+        .Contactme {
+            display: flex;
+            height: 75%;
+            justify-content: center;
+            margin: 12px;
+            flex-direction: column;
+            align-content: center;
+            flex-wrap: wrap;
+
+            #Form-Element-name {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .input {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            & textarea {
+                resize: none;
+                height: 90%;
+            }
+        }
+    }
 }
